@@ -1,0 +1,61 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+
+    link(href='http://fonts.googleapis.com/css?family=Oxygen', rel='stylesheet', type='text/css')
+
+    link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+
+    script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+
+    link(rel='stylesheet', href='/main.css')
+
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js')
+
+    script(src='/client.js')
+
+    title Chat
+
+  body
+    .pageWrapper
+      h1 Chat Eric
+
+      .chatDiv
+        .forAlignOutter
+          .forAlignInner
+            table.chatTable
+      br
+
+      .signIn
+        .titol
+          h3 Quin &eacute;s el teu Nom?
+
+        form
+          input#name(type='text', name='name', placeholder='Nom')
+          br
+          br
+
+          input#chatStart(type='submit', value='Entrar al chat!')
+
+      .formDiv
+        form#chatForm
+          .block
+            input#hiddenName(type='text', name='name')
+
+            select(name='color')
+              optgroup
+                option(value='#323A54') Gris/Negre
+
+                option(value='#DA4453') Vermell
+
+                option(value='#4A89DC') Blau
+
+                option(value='#F6BB42') Amarillo
+
+                option(value='#D770AD') Rossa
+          br
+
+          .block
+            input(type='text', name='chat')
+            input(type='submit', value='Enter')
